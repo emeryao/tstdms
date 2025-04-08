@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDSM Tester</title>
+    <script type="module">
+        import { parse } from '../esm/index.js';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('input[type="file"]').addEventListener('change', async event => {
+                const buffer = await event.target.files[0].arrayBuffer();
+                const segments = parse(buffer);
+                console.log(segments);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <input type="file">
+</body>
+
+</html>

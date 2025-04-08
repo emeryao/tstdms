@@ -1,0 +1,33 @@
+{
+    "author": "emeryao",
+    "bugs": {
+        "url": "https://github.com/emeryao/tstdms/issues"
+    },
+    "description": "tdms file parser in TypeScript",
+    "devDependencies": {
+        "@ts-all/eslint-config": "^0.2.2",
+        "http-server": "^14.1.1",
+        "typescript": "^5.8.3"
+    },
+    "homepage": "https://github.com/emeryao/tstdms#readme",
+    "keywords": [
+        "tdms"
+    ],
+    "license": "MIT",
+    "module": "./esm/index.js",
+    "name": "tdms",
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/emeryao/tstdms.git"
+    },
+    "scripts": {
+        "lint": "tsc && eslint",
+        "test": "tsc && http-server --port 8080 --silent ./"
+    },
+    "type": "module",
+    "types": "./esm/index.d.ts",
+    "version": "1.0.0-dev.1"
+}

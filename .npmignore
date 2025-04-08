@@ -1,0 +1,6 @@
+.editorconfig
+.vscode
+eslint.config.mjs
+src
+test
+tsconfig.json

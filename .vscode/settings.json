@@ -1,0 +1,19 @@
+{
+    "[typescript]": {
+        "editor.foldingStrategy": "indentation"
+    },
+    "editor.detectIndentation": false,
+    "editor.tabSize": 4,
+    "editor.wordWrap": "off",
+    "eslint.useFlatConfig": true,
+    "eslint.validate": [
+        "typescript",
+        "html"
+    ],
+    "files.encoding": "utf8",
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "html.format.wrapAttributes": "preserve",
+    "html.format.wrapLineLength": 0,
+    "typescript.tsdk": "./node_modules/typescript/lib"
+}
