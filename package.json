@@ -34,5 +34,5 @@
     },
     "type": "module",
     "types": "./esm/index.d.mts",
-    "version": "1.0.0-dev.6"
+    "version": "1.0.0"
 }
