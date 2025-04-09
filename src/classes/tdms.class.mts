@@ -164,6 +164,7 @@ export class Tdms {
                     if (groupInMap.rawData == null && group.rawData != null) {
                         groupInMap.rawData = group.rawData;
                         groupInMap.rawDataType = group.rawDataType;
+                        groupInMap.rawDataCount = group.rawDataCount;
                     }
                 }
             } else {
