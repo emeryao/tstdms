@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TDSM Tester</title>
     <script type="module">
-        import { parse } from '../esm/index.js';
+        import { parseGroup } from '../esm/index.mjs';
 
         document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('input[type="file"]').addEventListener('change', async event => {
                 const buffer = await event.target.files[0].arrayBuffer();
-                const segments = parse(buffer);
+                const segments = parseGroup(buffer);
                 console.log(segments);
             });
         });

@@ -9,12 +9,17 @@
         "http-server": "^14.1.1",
         "typescript": "^5.8.3"
     },
+    "exports": {
+        "default": "./esm/index.mjs",
+        "import": "./esm/index.mjs",
+        "node": "./esm/index.mjs",
+        "types": "./esm/index.d.mts"
+    },
     "homepage": "https://github.com/emeryao/tstdms#readme",
     "keywords": [
         "tdms"
     ],
     "license": "MIT",
-    "module": "./esm/index.js",
     "name": "tdms",
     "publishConfig": {
         "access": "public"
@@ -28,6 +33,6 @@
         "test": "tsc && http-server --port 8080 --silent ./"
     },
     "type": "module",
-    "types": "./esm/index.d.ts",
-    "version": "1.0.0-dev.1"
+    "types": "./esm/index.d.mts",
+    "version": "1.0.0-dev.6"
 }
